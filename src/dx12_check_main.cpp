@@ -1,4 +1,3 @@
-
 #include "dx12_labs.h"
 
 
@@ -27,11 +26,11 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nC
 
 			if (IsAdapterSupportsDX12(adapter.Get()))
 			{
-				std::wcout << " supports DX12 ";
+				std::wcout << " supports DX12\n";
 			}
 			else
 			{
-				std::wcout << " doesn't support DX12 ";
+				std::wcout << " doesn't support DX12\n";
 			}
 
 			adapter_index++;

@@ -1,4 +1,3 @@
-
 #include "renderer.h"
 #include "win32_window.h"
 
@@ -7,6 +6,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nC
 {
 	try
 	{
+		OutputDebugString(L"Starting the application.\n");
 		Renderer render(1280, 720);
 		return Win32Window::Run(&render, hInstance, nCmdShow);
 	}
